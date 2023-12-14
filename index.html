@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+<body data-theme="_1">
+    <main>
+        <header>
+            <h1>calc</h1>
+            <div class="theme-box">
+                <p>THEME</p>
+                <div class="switch-box ">
+                    <p>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                    </p>
+                    <button class="switch" onclick="handleTheme()"></button>
+                </div>
+            </div>
+        </header>
+        <div class="score-box">
+            <input class="score" id="result" disabled type="text" value="0,00"/>
+        </div>
+        <div class="keyboard">
+            <button onclick="newInput(7)">7</button>
+            <button onclick="newInput(8)">8</button>
+            <button onclick="newInput(9)">9</button>
+            <button onclick="handleDelete()" class="btn-func">DEL</button>
+            <button onclick="newInput(4)">4</button>
+            <button onclick="newInput(5)">5</button>
+            <button onclick="newInput(6)">6</button>
+            <button onclick="newInput('+')">+</button>
+            <button onclick="newInput(1)">1</button>
+            <button onclick="newInput(2)">2</button>
+            <button onclick="newInput(3)">3</button>
+            <button onclick="newInput('-')">-</button>
+            <button onclick="newInput('.')">.</button>
+            <button onclick="newInput(0)">0</button>
+            <button onclick="newInput('/')">/</button>
+            <button onclick="newInput('*')">x</button>
+            <button onclick="handleReset()" class="btn-func grid-span btn-reset">RESET</button>
+            <button onclick="handleResult()" class="btn-res grid-span">=</button>
+        </div>
+    </main>
+</body>
+</html>
+
+<script src="./main.js"></script>
